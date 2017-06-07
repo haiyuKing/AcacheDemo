@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.why.project.acachedemo.MainActivity">
+
+    <!--  当之有一个EditText或者AutoCompleteTextView的时候，进入画面时是默认得到焦点的。 要想去除焦点，可以在auto之前加一个0像素的layout，并设置他先得到焦点。 -->
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <!-- 输入用户名区域 -->
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/comm_input_selector"
+        android:hint="请输入用户名"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#999999"
+        android:drawableLeft="@drawable/username_img"
+        android:drawablePadding="10dp"
+        android:layout_margin="5dp"/>
+
+    <!-- *******************登录按钮区域******************* -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/comm_btn_selector"
+        android:gravity="center"
+        android:text="登&#160;&#160;&#160;&#160;&#160;&#160;录"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/edt_username"/>
+
+</RelativeLayout>

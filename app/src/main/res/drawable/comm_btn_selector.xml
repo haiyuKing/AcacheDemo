@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登录界面按钮背景 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Non focused states android:drawable="@drawable/top_btn_unpress"-->
+    <item
+        android:state_focused="false"
+        android:state_selected="false"
+        android:state_pressed="false"
+        >
+
+        <shape android:shape="rectangle">
+            <!-- 填充-->
+            <solid android:color="#0099FF"/>
+            <!-- 圆角 -->
+            <corners 
+                android:radius="5dp" />
+        </shape>
+        
+	</item>
+    <!-- Pressed android:drawable="@drawable/top_btn_press"-->
+    <item
+        android:state_pressed="true"
+        >
+        
+        <shape android:shape="rectangle">
+            <!-- 填充-->
+            <solid android:color="#1C84C6"/>
+            <!-- 圆角 -->
+            <corners 
+                android:radius="5dp" />
+        </shape>
+        
+	</item>
+</selector>
